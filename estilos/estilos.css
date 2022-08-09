@@ -7,7 +7,7 @@
 
 .gridindex{
     display: grid;
-    grid-template-rows: 24vh 130vh 24vh;
+    grid-template-rows: 24vh 130vh 29vh;
 
 }
 .gridmain{
@@ -241,6 +241,9 @@
     }
 }
 /*streamers*/
+ul{
+    width: 100%;
+}
 p{
     font-size: 18px;
     margin-left: 5px;
@@ -249,13 +252,16 @@ p{
 h1 {
     height: 114px;
     width: 100%;
+    margin-bottom: 0% !important;
 
     background-image: url(https://picsum.photos/1700/124);
     background-size: auto;
     background-repeat: no-repeat;
     text-transform:uppercase;
     text-align: center;
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 60px;
     font-style: oblique;
     font-family: 'Rubik', sans-serif;
@@ -436,24 +442,11 @@ h1 {
     font-family: 'Rubik', sans-serif
 }
 footer{
-    position: relative;
-    top: 100%;
-
     width: 99,99%;
     border: solid 1px black;
     font-family: 'Signika', sans-serif;
     font-size: 20px;
     background-color: #c7c7c7;
-}
-.foot{
-    transform: translate(40vw, -12vh);
-    margin-right: 50%;
-}
-.logo{
-    position: relative;
-    top:20px;
-    left:60px;
-    padding-left: 20px;
 }
 .pagfooter{
     margin-left: 25px;
@@ -473,21 +466,29 @@ body{
 main{
     font-family: 'Rubik', sans-serif
 }
-@media screen and (max-width: 768px) {
-    .foot{
-        transform: translate(50vw, -10vh);
-        margin-right: 50%;
+@media screen and (max-width: 790px) and (min-width:631px) {
+    .gridindex{
+        display: grid;
+        grid-template-rows: 24vh 139vh 32vh;
+    
+    }
+    footer{
+        font-size: 7px !important;
     }
     .logo{
         width: 5vw;
         height: 5vh;
     }
     p{
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 @media screen and (max-width: 631px) {
-
+    .gridindex{
+        display: grid;
+        grid-template-rows: 24vh 139vh 39vh;
+    
+    }
     .foot{
         transform: translate(50vw, -10vh);
         margin-right: 50%;

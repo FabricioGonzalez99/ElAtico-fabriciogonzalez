@@ -6,23 +6,42 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./estilos/estilos.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <title>El Atico</title>
     </head>
 
     <body class="gridindex">
         <header>
-            <h1>
-                El Atico
-            </h1>
-            <nav class="gris">
-                <p class="linea">
-                    <a class="negro" href="#">Inicio</a>
-                    <a class="negro" href="./pages/streamers.html">Streamers</a>
-                    <a class="negro" href="./pages/clips.html">Clips</a>
-                    <a class="negro" href="./pages/sobrenosotros.html">Nosotros</a>
-                    <a class="negro" href="./pages/contacto.html">Contacto</a>
-                </p>
-            </nav>
+          <h1 class="container-fluid">
+              El Atico
+          </h1>
+          <nav class="navbar navbar-expand-lg bg-info bg-gradient">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-between">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/streamers.html">Streamers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/clips.html">Clips</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/sobrenosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </header>
         <main class="gridmain">
             <h2 class="bienveindex">Bienvenidos!</h2>
@@ -52,16 +71,17 @@
             </section>
         </main>
         <footer>
-            <Div>
-                <p>Muchas gracias por pasar a conocernos!</p>
-                <p>Aqui tienes nuestras redes sociales:</p>
-                <img class="logo" src="./imgs/Instagram_logo_2016.png" alt="Logo_instagram" widht="50px" height="50px">
-                <img class="logo" src="./imgs/discordlogo.png" alt="logo_discord" widht="50px" height="50px">
-                <p class="foot">Ante cualquier pregunta o consulta que tengas dirigete a:
-                    <a class="pagfooter" href="./pages/contacto.html">Contacto</a>
-                </p>
-                <p>O incluso puedes comunicarte a traves de nuestro Email: Elatico@gmail.com</p>
+            <Div class="container-fluid row">
+              <p class="col-5">Muchas gracias por pasar a conocernos!</p> 
+              <p class="col-5">Ante cualquier pregunta o consulta que tengas dirigete a:
+                <a class="pagfooter" href="./pages/contacto.html">Contacto</a>
+              </p>
+              <p class="col-3">Aqui tienes nuestras redes sociales:</p>
+              <a href="#" class="col-1"><img class="logo" src="./imgs/Instagram_logo_2016.png" alt="Logo_instagram" widht="50px" height="50px"></a>
+              <a href="#" class="col-1"><img class="logo" src="./imgs/discordlogo.png" alt="logo_discord" widht="50px" height="50px"></a>
+                <p class="col-11">O incluso puedes comunicarte a traves de nuestro Email: Elatico@gmail.com</p>
             </Div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
 </html>
