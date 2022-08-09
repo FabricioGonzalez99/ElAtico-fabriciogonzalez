@@ -7,18 +7,17 @@
 
 .gridindex{
     display: grid;
-    grid-template-rows: 24vh 130vh 29vh;
+    grid-template-rows: 24vh 156vh 32vh;
 
 }
 .gridmain{
     display: grid;
-    width: 95vw;
     grid-template-areas: 
-    "titulo titulo"
-    "streamers ."
-    "clips ."
-    "nosotros .";
-    grid-template-rows: 12vh 51vh 69vh 17vh;
+    "titulo"
+    "streamers"
+    "clips"
+    "nosotros";
+    grid-template-rows: 14vh 45vh 69vh 17vh !important;
     grid-template-columns: 100%;
 }
 .bienveindex{
@@ -32,9 +31,6 @@
 }
 .clips{
     grid-area: clips;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     width: 99,99%;
     border: solid 2px rgb(88, 72, 72);
     margin-top: 1%;
@@ -42,19 +38,18 @@
     margin-bottom: 2%;
 }
 .clipindex{
-    border: solid 1px rgb(50, 223, 73);
     margin: auto
 }
 .parrafoindex{
     margin-top: 2%;
 }
 .imgstrimers{
-    width: 300px;
-    height: 200px;
+    width: 23vh;
+    height: 22vh;
 }
 .imgstrimers2{
-    width: 300px;
-    height: 200px;
+    width: 23vh;
+    height: 22vh;
 }
 .botindex{
     margin-left: 5px;
@@ -64,9 +59,7 @@
     grid-area: streamers;
     display: flex;
     flex-direction: column;
-    width: 99,99%;
     border: solid 2px rgb(88, 72, 72);
-    padding-bottom: 2%;
     margin-bottom: 3%;
 }
 .img{
@@ -119,7 +112,7 @@
         "streamers"
         "clips"
         "nosotros";
-        grid-template-rows: 16vh 47vh 66vh 12vh;
+        grid-template-rows: 16vh 40vh 66vh 12vh !important;
         grid-template-columns: 100%;
     }
     .streamers_index{
@@ -147,6 +140,9 @@
     }
 }
 @media screen and (max-width: 1116px) and (min-width:768px){
+    .gridmain{
+        grid-template-rows: 14vh 40vh 69vh 17vh !important;
+    }
     .streamers_index{
         flex-wrap: wrap;
     }
@@ -466,10 +462,10 @@ body{
 main{
     font-family: 'Rubik', sans-serif
 }
-@media screen and (max-width: 790px) and (min-width:631px) {
+@media screen and (max-width: 992px) and (min-width:457px) {
     .gridindex{
         display: grid;
-        grid-template-rows: 24vh 139vh 32vh;
+        grid-template-rows: 24vh 151vh 26vh;
     
     }
     footer{
@@ -483,10 +479,14 @@ main{
         font-size: 13px;
     }
 }
-@media screen and (max-width: 631px) {
+@media screen and (max-width: 457px) {
+    h2{
+        margin-top: 8vh !important;
+        font-size: 19px !important;
+    }
     .gridindex{
         display: grid;
-        grid-template-rows: 24vh 139vh 39vh;
+        grid-template-rows: 24vh 139vh 49vh;
     
     }
     .foot{
@@ -498,6 +498,9 @@ main{
         height: 5vh;
     }
     p{
-        font-size: 12px;
+        font-size: 11px;
+    }
+    .pagfooter{
+        font-size: 11px;
     }
 }
