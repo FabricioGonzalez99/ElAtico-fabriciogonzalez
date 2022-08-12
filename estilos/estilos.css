@@ -7,7 +7,7 @@
 
 .gridindex{
     display: grid;
-    grid-template-rows: 24vh 156vh 32vh;
+    grid-template-rows: 24vh 152vh 28vh;
 
 }
 .gridmain{
@@ -38,8 +38,8 @@
     margin-bottom: 2%;
 }
 .clipindex{
-    margin: auto
-}
+    transition: all 3s;
+}   
 .parrafoindex{
     margin-top: 2%;
 }
@@ -102,9 +102,12 @@
     }
     .gridindex{
         display: grid;
-        grid-template-rows: 35vh 124vh 24vh;
+        grid-template-rows: 35vh 137vh 46vh;
         grid-template-columns: 99.99%;
     
+    }
+    .p-index{
+        font-size: 13px !important;
     }
     .gridmain{
         display: grid;
@@ -126,7 +129,7 @@
         height: 19vh;
     }
     .clipindex{
-        width: 70%;
+        height: 280px;
     }
     .foot{
         position: relative;
@@ -138,6 +141,9 @@
     }
 }
 @media screen and (max-width: 1116px) and (min-width:768px){
+    .clipindex{
+        height: 330px !important;
+    }
     .gridmain{
         grid-template-rows: 14vh 40vh 69vh 17vh !important;
     }
@@ -147,6 +153,10 @@
     .imgstrimers{
         width: 32vh;
         height: 19vh;
+    }
+    .p-index{
+        font-size: 15px !important;
+        margin: 0px !important
     }
 }
 /*index*/
@@ -464,10 +474,10 @@ main{
     width: 4vw;
     height: 6vh;
 }
-@media screen and (max-width: 992px) and (min-width:457px) {
+@media screen and (max-width: 992px) and (min-width:768px) {
     .gridindex{
         display: grid;
-        grid-template-rows: 24vh 151vh 26vh;
+        grid-template-rows: 24vh 151vh 30vh;
     
     }
     footer{
