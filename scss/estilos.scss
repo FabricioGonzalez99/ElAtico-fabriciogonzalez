@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,7 +10,7 @@
 .gridindex{
     display: grid;
     grid-template-rows: 24vh 166vh 28vh;
-
+    background-image: linear-gradient(to bottom, #cad4e3, #a1a5b2, #797983, #525056, #2d2b2e);
 }
 .gridmain{
     display: grid;
@@ -84,12 +86,10 @@
 .parrafostreamers{
     margin-top: 13px;
 }
-.imgflex{
-    display: flex;
-}
 .p-index{
     font-size: 16px;
 }
+
 /*index*/
 
 /*streamers*/
@@ -98,23 +98,37 @@
     display: grid;
     grid-template-rows: 15vh 25vh 26vh 26vh;
     grid-template-columns: auto;
-}
-.tit_streamers{
-    margin-top: 20px;
-    text-align: center;
-    font-size: 45px;
-    font-family: 'Rubik', sans-serif
-}
-.secs_streamers{
-    display: flex;
-    border: solid 2px rgb(139, 59, 59);
-    background-color: rgb(172, 124, 69);
-}
-.loguitos_strim{
-    width: 7vw;
-    height: 13vh;
-    margin-top: 3vh;
-    transition: all 2s;
+    background-image: linear-gradient(to right top, #cd7eb2, #c96691, #c04f6e, #b13a4a, #9d2a25);
+    .tit_streamers{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 45px;
+        font-family: 'Rubik', sans-serif;
+        .secs_streamers{
+            display: flex;
+            border: solid 2px rgb(139, 59, 59);
+            background-color: rgb(172, 124, 69);
+            .p_streamers{
+                padding-left: 10px;
+                font-size: 30px;
+                .loguitos_strim{
+                    width: 7vw;
+                    height: 12vh;
+                    margin-top: 3vh;
+                    transition: transform 1.2s;
+                    &:hover{
+                        transform: scale(1.2,1.3)
+                    }
+                }
+            }
+            .texto{
+                font-size: 21px;
+                width: 70vw;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    }
 }
 /*streamers*/
 ul{
@@ -144,6 +158,9 @@ h1 {
     color:red
 }
 /*clips*/
+.bgclips{
+    background-image: radial-gradient(circle, #44456d, #6d4e7a, #95577f, #b9637b, #d47571);
+}
 .tit_clips{
     margin-top: 30px;
     margin-bottom: 40px;
@@ -170,6 +187,9 @@ h1 {
 /*clips*/
 
 /*nosotros*/
+.bgnos{
+    background-image: radial-gradient(circle, #5fa38b, #258893, #26698d, #464772, #4f2645);
+}
 .tit_nos{
     position: relative;
     right: 25px;
@@ -182,9 +202,6 @@ h1 {
 }
 .sec_nos{
     border: solid 1px cadetblue;
-    background-image: url("https://picsum.photos/1500/510");
-    background-repeat: no-repeat;
-    background-size: 100%;
     margin-bottom: 5%;
 }
 .sec_nos1{
@@ -383,7 +400,7 @@ main{
     
     }
     .p-index{
-        font-size: 13px !important;
+        font-size: $tam-fuente13 !important;
     }
     .gridmain{
         display: grid;
@@ -411,11 +428,6 @@ main{
         height: 280px;
     }
     /*index*/
-    .foot{
-        position: relative;
-        right: 10px;
-        margin-right: 65%;
-    }
     footer{
         margin-top: 20px;
     }
@@ -440,7 +452,7 @@ main{
     
     }
     .p-index{
-        font-size: 13px !important;
+        font-size: $tam-fuente13 !important;
     }
     .gridmain{
         display: grid;
@@ -468,6 +480,6 @@ main{
         height: 280px;
     }
     p{
-        font-size: 13px !important;
+        font-size: $tam-fuente13 !important;
     }
 }
