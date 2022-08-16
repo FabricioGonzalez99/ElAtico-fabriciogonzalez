@@ -104,32 +104,33 @@
         text-align: center;
         font-size: 45px;
         font-family: 'Rubik', sans-serif;
-        .secs_streamers{
-            display: flex;
-            border: solid 2px rgb(139, 59, 59);
-            background-color: rgb(172, 124, 69);
-            .p_streamers{
-                padding-left: 10px;
-                font-size: 30px;
-                .loguitos_strim{
-                    width: 7vw;
-                    height: 12vh;
-                    margin-top: 3vh;
-                    transition: transform 1.2s;
-                    &:hover{
-                        transform: scale(1.2,1.3)
-                    }
+        }
+    .secs_streamers{
+        display: flex;
+        border: solid 2px rgb(139, 59, 59);
+        background-color: rgb(172, 124, 69);
+        .p_streamers{
+            padding-left: 10px;
+            font-size: 30px;
+            .loguitos_strim{
+                width: 7vw;
+                height: 12vh;
+                margin-top: 3vh;
+                transition: transform 1.2s;
+                &:hover{
+                    transform: scale(1.2,1.3)
                 }
             }
-            .texto{
-                font-size: 21px;
-                width: 70vw;
-                margin-top: 20px;
-                text-align: center;
-            }
+        }
+        .texto{
+            font-size: 21px;
+            width: 70vw;
+            margin-top: 20px;
+            text-align: center;
         }
     }
 }
+
 /*streamers*/
 ul{
     width: 100%;

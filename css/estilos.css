@@ -94,25 +94,25 @@
     text-align: center;
     font-size: 45px;
     font-family: 'Rubik', sans-serif; }
-    .gridstreamers .tit_streamers .secs_streamers {
-      display: flex;
-      border: solid 2px #8b3b3b;
-      background-color: #ac7c45; }
-      .gridstreamers .tit_streamers .secs_streamers .p_streamers {
-        padding-left: 10px;
-        font-size: 30px; }
-        .gridstreamers .tit_streamers .secs_streamers .p_streamers .loguitos_strim {
-          width: 7vw;
-          height: 12vh;
-          margin-top: 3vh;
-          transition: transform 1.2s; }
-          .gridstreamers .tit_streamers .secs_streamers .p_streamers .loguitos_strim:hover {
-            transform: scale(1.2, 1.3); }
-      .gridstreamers .tit_streamers .secs_streamers .texto {
-        font-size: 21px;
-        width: 70vw;
-        margin-top: 20px;
-        text-align: center; }
+  .gridstreamers .secs_streamers {
+    display: flex;
+    border: solid 2px #8b3b3b;
+    background-color: #ac7c45; }
+    .gridstreamers .secs_streamers .p_streamers {
+      padding-left: 10px;
+      font-size: 30px; }
+      .gridstreamers .secs_streamers .p_streamers .loguitos_strim {
+        width: 7vw;
+        height: 12vh;
+        margin-top: 3vh;
+        transition: transform 1.2s; }
+        .gridstreamers .secs_streamers .p_streamers .loguitos_strim:hover {
+          transform: scale(1.2, 1.3); }
+    .gridstreamers .secs_streamers .texto {
+      font-size: 21px;
+      width: 70vw;
+      margin-top: 20px;
+      text-align: center; }
 
 /*streamers*/
 ul {
