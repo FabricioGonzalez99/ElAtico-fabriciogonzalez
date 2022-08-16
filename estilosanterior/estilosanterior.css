@@ -7,7 +7,7 @@
 
 .gridindex{
     display: grid;
-    grid-template-rows: 24vh 152vh 28vh;
+    grid-template-rows: 24vh 166vh 28vh;
 
 }
 .gridmain{
@@ -17,7 +17,7 @@
     "streamers"
     "clips"
     "nosotros";
-    grid-template-rows: 14vh 45vh 69vh 17vh !important;
+    grid-template-rows: 14vh 48vh 83vh 17vh !important;
     grid-template-columns: 100%;
 }
 .bienveindex{
@@ -47,11 +47,6 @@
     width: 23vh;
     height: 22vh;
     transition: all 2s;
-}
-@media screen and (min-width: 1000px) {
-    .imgstrimers:hover{
-        transform: scale(2,1.4);
-    }
 }
 .botindex{
     margin-left: 5px;
@@ -92,72 +87,8 @@
 .imgflex{
     display: flex;
 }
-@media screen and (max-width:768px){
-    .img{
-        margin-right: 10vh;
-        margin-left: 5vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .gridindex{
-        display: grid;
-        grid-template-rows: 35vh 137vh 46vh;
-        grid-template-columns: 99.99%;
-    
-    }
-    .p-index{
-        font-size: 13px !important;
-    }
-    .gridmain{
-        display: grid;
-        width: 95vw;
-        grid-template-areas: 
-        "titulo"
-        "streamers"
-        "clips"
-        "nosotros";
-        grid-template-rows: 16vh 40vh 66vh 12vh !important;
-        grid-template-columns: 100%;
-    }
-    .streamers_index{
-        flex-wrap: wrap;
-        width: 99.99;
-    }
-    .imgstrimers{
-        width: 19vh;
-        height: 19vh;
-    }
-    .clipindex{
-        height: 280px;
-    }
-    .foot{
-        position: relative;
-        right: 10px;
-        margin-right: 65%;
-    }
-    footer{
-        margin-top: 20px;
-    }
-}
-@media screen and (max-width: 1116px) and (min-width:768px){
-    .clipindex{
-        height: 330px !important;
-    }
-    .gridmain{
-        grid-template-rows: 14vh 40vh 69vh 17vh !important;
-    }
-    .streamers_index{
-        flex-wrap: wrap;
-    }
-    .imgstrimers{
-        width: 32vh;
-        height: 19vh;
-    }
-    .p-index{
-        font-size: 15px !important;
-        margin: 0px !important
-    }
+.p-index{
+    font-size: 16px;
 }
 /*index*/
 
@@ -184,63 +115,6 @@
     height: 13vh;
     margin-top: 3vh;
     transition: all 2s;
-}
-@media screen and (min-width: 1000px) {
-    .loguitos_strim:hover{
-        transform: scale(1.8,1.4);
-    }
-}
-.p_streamers{
-    padding-left: 10px;
-    font-size: 20px;
-}
-.texto{
-    font-size: 18px;
-    width: 70vw;
-    margin-top: 20px;
-    text-align: center;
-}
-@media screen and (max-width: 768px) {
-    .p_streamers{
-        font-size: 2vh;
-    }
-    .loguitos_strim{
-        width: 14vw;
-        height: 13vh;
-        margin-top: 3vh;
-    }
-    .texto{
-        font-size: 2vh;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        text-align: left;
-    }
-    .negro{
-        font-size: 10px;
-    }
-}
-@media screen and (max-width: 1116px) and (min-width:768px){
-
-    .linea{
-        align-content: flex-start;
-        align-items: flex-start;
-        word-spacing: 100px;
-        width: 100%
-    }
-    .negro{
-        font-size: 10px;
-    }
-    .texto{
-        font-size: 15px;
-    }
-    .p_streamers{
-        font-size: 2.5vh;
-    }
-    .loguitos_strim{
-        width: 10vw;
-        height: 13vh;
-        margin-top: 3vh;
-    }
 }
 /*streamers*/
 ul{
@@ -474,23 +348,6 @@ main{
     width: 4vw;
     height: 6vh;
 }
-@media screen and (max-width: 992px) and (min-width:768px) {
-    .gridindex{
-        display: grid;
-        grid-template-rows: 24vh 151vh 30vh;
-    
-    }
-    footer{
-        font-size: 7px !important;
-    }
-    .logo{
-        width: 5vw;
-        height: 5vh;
-    }
-    p{
-        font-size: 13px;
-    }
-}
 @media screen and (max-width: 457px) {
     h2{
         margin-top: 8vh !important;
@@ -514,5 +371,103 @@ main{
     }
     .pagfooter{
         font-size: 11px;
+    }
+}
+@media screen and (max-width:768px) and (min-width:481px){
+    /*index*/
+
+    .gridindex{
+        display: grid;
+        grid-template-rows: 35vh 140vh 37vh;
+        grid-template-columns: 99.99%;
+    
+    }
+    .p-index{
+        font-size: 13px !important;
+    }
+    .gridmain{
+        display: grid;
+        width: 95vw;
+        grid-template-areas: 
+        "titulo"
+        "streamers"
+        "clips"
+        "nosotros";
+        grid-template-rows: 16vh 43vh 66vh 12vh !important;
+        grid-template-columns: 100%;
+    }
+    .streamers_index{
+        flex-wrap: wrap;
+        width: 99.99;
+    }
+    .imgstrimers{
+        width: 19vh;
+        height: 19vh;
+    }
+    .imgstrimers:hover{
+        transform: scale(1.4,1.2);
+    }
+    .clipindex{
+        height: 280px;
+    }
+    /*index*/
+    .foot{
+        position: relative;
+        right: 10px;
+        margin-right: 65%;
+    }
+    footer{
+        margin-top: 20px;
+    }
+    p{
+        font-size: 17px !important;
+    }
+    .img{
+        margin-right: 10vh;
+        margin-left: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:480px){
+    /*index*/
+    
+    .gridindex{
+        display: grid;
+        grid-template-rows: 35vh 140vh 37vh;
+        grid-template-columns: 99.99%;
+    
+    }
+    .p-index{
+        font-size: 13px !important;
+    }
+    .gridmain{
+        display: grid;
+        width: 95vw;
+        grid-template-areas: 
+        "titulo"
+        "streamers"
+        "clips"
+        "nosotros";
+        grid-template-rows: 16vh 43vh 66vh 12vh !important;
+        grid-template-columns: 100%;
+    }
+    .streamers_index{
+        flex-wrap: wrap;
+        width: 99.99;
+    }
+    .imgstrimers{
+        width: 19vh;
+        height: 19vh;
+    }
+    .imgstrimers:hover{
+        transform: scale(1.2,1.2);
+    }
+    .clipindex{
+        height: 280px;
+    }
+    p{
+        font-size: 13px !important;
     }
 }
