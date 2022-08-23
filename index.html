@@ -1,87 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/estilos.css">
-        <title>El Atico</title>
-    </head>
-
-    <body class="gridindex">
-        <header>
-          <h1 class="container-fluid">
-              El Atico
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Pagina principal, contiene y explica las partes de la pagina">
+      <meta name="keywords" content="ATICO, TWITCH, DIRECTOS">
+      <link rel="icon" href="./imgs/favicon-32x32.png">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+      <link rel="stylesheet" href="./css/estilos.css">
+      <title>El Atico-Pagina Principal</title>
+  </head>
+  <body class="gridindex">
+    <header>
+      <div class="container-fluid div_tit">
+        <div class="row titulohead">
+          <a class="col-4" href="#"><img class="img-thumbnail logoatico" src="./imgs/elaticologo.jpg" alt="Logo principal"></a>
+          <h1 class="col-7 justify-content-start">
+            El Atico
           </h1>
-          <nav class="navbar navbar-expand-lg bg-info bg-gradient">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-info bg-gradient">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav d-flex justify-content-between">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/streamers.html">Streamers</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/clips.html">Clips</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/sobrenosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"  aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/streamers.html">Streamers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/clips.html">Clips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/sobrenosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
-        </header>
-        <main class="gridmain">
-            <h2 class="bienveindex">Bienvenidos!</h2>
-            <section class="streamers_index container-fluid row">
-                <h3 class="titindex col-12">Streamers:</h3>
-                <div class="img col-10">
-                    <img class="imgstrimers" src="https://picsum.photos/100/110" alt="">
-                    <img class="imgstrimers" src="https://picsum.photos/100/110" alt=""> 
-                </div>
-                <p class="parrafostreamers col-10 mt-4">Si quieres conocernos mas en profundidad:<a class="botindex"
-                        href="./pages/streamers.html">Streamers</a>
-            </section>
-            <section class="clips row container-fluid">
-                <h3 class="titindex col-12">Clips:</h3>
-                <iframe class="clipindex col-6 mt-2 m-auto" width="560" height="415" src="https://www.youtube.com/embed/VlLk9Ujr5nY"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <p class="parrafoindex col-12">Si quieres ver mas clips: <a class="botindex" href="./pages/clips.html">Clips</a>
-                </p>
-            </section>
-            <section class="container d-flex justify-content-center nos">
-                <p class="nosindex">
-                    Si quieres conocer mas sobre nosotros puedes ir a la pestaña
-                    <a href="./pages/sobrenosotros.html">Nosotros</a>
-                </p> 
-            </section>
-        </main>
-        <footer>
-            <Div class="container-fluid row">
-              <p class="col-5 mb-3 p-index">Muchas gracias por pasar a conocernos!</p> 
-              <p class="col-5 mb-3 p-index">Ante cualquier pregunta o consulta que tengas dirigete a:
-                <a class="pagfooter" href="./pages/contacto.html">Contacto</a>
-              </p>
-              <p class="col-3 mb-5 p-index">Aqui tienes nuestras redes sociales:</p>
-              <a href="#" class="col-1"><img class="logo" src="./imgs/Instagram_logo_2016.png" alt="Logo_instagram" widht="50px" height="50px"></a>
-              <a href="#" class="col-1"><img class="logo" src="./imgs/discordlogo.png" alt="logo_discord" widht="50px" height="50px"></a>
-                <p class="col-11 p-index">O incluso puedes comunicarte a traves de nuestro Email: Elatico@gmail.com</p>
-            </Div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    </body>
+        </div>
+      </nav>
+    </header>
+    <main class="gridmain">
+      <h2 class="bienveindex">Bienvenidos!</h2>
+      <section class="streamers_index container-fluid">
+        <div class="row">
+          <h3 class="titindex col-10">Streamers:</h3>
+          <div class="d-flex justify-content-around img col-10">
+            <img class="imgstrimers" src="https://picsum.photos/100/110" alt="">
+            <img class="imgstrimers" src="https://picsum.photos/100/110" alt=""> 
+          </div>
+          <p class="parrafostreamers col-6">Si quieres conocernos mas en profundidad:
+            <a class="botindex" href="./pages/streamers.html">Streamers</a>
+          </p>
+        </div>
+      </section>
+      <section class="container-fluid clips">
+        <div class="row">
+          <h3 class="titindex col-10">Clips:</h3>
+          <iframe class="clipindex col-5 mt-2 m-auto" width="460" height="325" src="https://www.youtube.com/embed/VlLk9Ujr5nY"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <p class="parrafoindex col-10">Si quieres ver mas clips: <a class="botindex" href="./pages/clips.html">Clips</a>
+          </p>
+        </div>
+      </section>
+      <section class="container d-flex justify-content-center nos">
+        <p class="nosindex">
+          Si quieres conocer mas sobre nosotros puedes ir a la pestaña
+          <a class="botindex" href="./pages/sobrenosotros.html">Nosotros</a>
+        </p> 
+      </section>
+    </main>
+    <footer>
+      <div class="container-fluid row">
+        <p class="col-5 mb-3 p-index">Muchas gracias por pasar a conocernos!</p> 
+        <p class="col-5 mb-3 p-index">Ante cualquier pregunta o consulta que tengas dirigete a:
+          <a class="pagfooter" href="./pages/contacto.html">Contacto</a>
+        </p>
+        <p class="col-3 mb-5 p-index">Aqui tienes nuestras redes sociales:</p>
+        <a href="#" class="col-1"><img class="logo" src="./imgs/Instagram_logo_2016.png" alt="Logo_instagram" widht="50px" height="50px"></a>
+        <a href="#" class="col-1"><img class="logo" src="./imgs/discordlogo.png" alt="logo_discord" widht="50px" height="50px"></a>
+        <p class="col-11 p-index">O incluso puedes comunicarte a traves de nuestro Email: Elatico@gmail.com</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
 </html>

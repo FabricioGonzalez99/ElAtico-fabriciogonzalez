@@ -1,0 +1,28 @@
+@mixin bg_banner{
+    background-image: url(https://picsum.photos/1700/124);
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-left: 0% !important;
+}
+@mixin txt_flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin titulos {
+    margin-top: 20px;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif
+}
+@mixin parrafos_nos{
+    font-size: 23px;
+    word-spacing: 3px;
+}
+@mixin carac_contac{
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: 'Signika', sans-serif;
+    margin-bottom: 3px;
+}

@@ -2,12 +2,45 @@
     margin: 0px;
     padding: 0px;
 }
+/*header*/
+.logoatico{
+    width: 20vh;
+    height: 20vh !important;
+}
+.titulohead{
+    background-image: url(https://picsum.photos/1700/124);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.div_tit{
+    padding-left: 0% !important;
+}
+/*header*/
+
+/*general*/
+h1 {
+    margin-bottom: 0% !important;
+    text-transform:uppercase;
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    font-style: oblique;
+    font-family: 'Rubik', sans-serif;
+    color:red
+}
+ul{
+    width: 99%;
+}
+p{
+    font-size: 17px;
+    font-family: 'Rubik', sans-serif
+}
+/*general*/
 
 /*index*/
-
 .gridindex{
     display: grid;
-    grid-template-rows: 24vh 166vh 28vh;
+    grid-template-rows: 26vh 170vh 40vh;
     background-image: linear-gradient(to bottom, #cad4e3, #a1a5b2, #797983, #525056, #2d2b2e);
 }
 .gridmain{
@@ -17,21 +50,41 @@
     "streamers"
     "clips"
     "nosotros";
-    grid-template-rows: 14vh 48vh 83vh 17vh !important;
-    grid-template-columns: 100%;
+    grid-template-rows: 14vh 50vh 85vh 15vh !important;
 }
 .bienveindex{
     grid-area: titulo;
-    margin-left: 30px;
     margin-top: 20px;
     font-size: 50px;
     margin-bottom: 30px;
     text-align: center;
     font-family: 'Rubik', sans-serif
 }
+.streamers_index{
+    grid-area: streamers;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px rgb(88, 72, 72);
+    margin-bottom: 3%;
+}
+.parrafostreamers{
+    margin-top: 13px;
+}
+.img{
+    display: flex;
+    justify-content: space-around !important;
+}
+.imgstrimers{
+    width: 23vh;
+    height: 22vh;
+    transition: width 2s , height 2s;
+}
+.imgstrimers:hover{
+    width: 34vh;
+    height: 26vh;
+}
 .clips{
     grid-area: clips;
-    width: 99,99%;
     border: solid 2px rgb(88, 72, 72);
     margin-top: 1%;
     padding-bottom: 1%;
@@ -65,9 +118,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 300px;
+    height: 200px;
+    transition: transform 1.5s;
+}
+.botindex{
+    color: rgb(100, 35, 100);
 }
 .titindex{
-    margin-left: 5px;
     margin-top: 20px;
     margin-bottom: 10px;
     font-family: 'Rubik', sans-serif
@@ -145,12 +203,15 @@
 /*index*/
 
 /*streamers*/
-.gridstreamers{
-    height: 50%;
+.gridmainstreamers{
     display: grid;
-    grid-template-rows: 15vh 25vh 26vh 26vh;
+    grid-template-rows: 15vh 27vh 28vh 28vh;
     grid-template-columns: auto;
     background-image: linear-gradient(to right top, #cd7eb2, #c96691, #c04f6e, #b13a4a, #9d2a25);
+}
+.gridstreamers{
+    display: grid;
+    grid-template-rows: 26vh 156vh 40vh;
 }
 .tit_streamers{
     margin-top: 20px;
@@ -167,19 +228,20 @@
     width: 7vw;
     height: 12vh;
     margin-top: 3vh;
-    transition: transform 1.2s;
+    transition: width 2s , heigth 2s;
 }
 .loguitos_strim:hover{
-    transform: scale(1.2,1.3)
+    width: 15vh;
+    height: 13vh;
 }
 .p_streamers{
     padding-left: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 .texto{
-    font-size: 21px;
+    font-size: 17px;
     width: 70vw;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 /*streamers*/
@@ -221,9 +283,7 @@ h1 {
     font-family: 'Rubik', sans-serif
 }
 .nombclips{
-    position: relative;
-    top: 30px;
-    font-size: 30px;
+    font-size: 23px;
 }
 .sec_clips{
     border: solid 1px rebeccapurple;
@@ -233,7 +293,6 @@ h1 {
     width: 25%;
     position: relative;
     left:20%;
-    margin-left: 5%;
     margin-bottom: 20px;
 }
 /*clips*/
@@ -245,7 +304,6 @@ h1 {
 .tit_nos{
     position: relative;
     right: 25px;
-
     margin-top: 30px;
     margin-bottom: 40px;
     text-align: center;
@@ -303,13 +361,11 @@ h1 {
     bottom: 10px;
 }
 .pregs{
-    margin-left: 10px;
     font-size: 18px;
     font-family: 'Signika', sans-serif;
     margin-bottom: 3px;
 }
 .celular{
-    margin-left: 10px;
     font-size: 18px;
     font-family: 'Signika', sans-serif;
     margin-bottom: 3px;
@@ -319,7 +375,6 @@ h1 {
     bottom: 114px;
 }
 .mail{
-    margin-left: 10px;
     font-size: 18px;
     font-family: 'Signika', sans-serif;
     margin-bottom: 3px;
@@ -329,7 +384,6 @@ h1 {
     bottom: 47px;
 }
 .msj{
-    margin-left: 10px;
     font-size: 18px;
     font-family: 'Signika', sans-serif;
     margin-bottom: 3px;
@@ -340,26 +394,21 @@ h1 {
 .cartelmsj{
     width: 1100px;
     height: 200px;
-    margin-left: 10px;
     align-content:flex-start;
-
     position: relative;
     bottom: 110px;
 }
 .formu{
     position: relative;
     top: 30px;
-
     background-color: #d6d6d4;
     height: 460px;
     border: solid 2px gray;
-    margin-left: 20px;
     margin-right: 20px;
     margin-top: 0px;
     padding-bottom: 0px;
 }
 .btn{
-    margin-left: 10px;
     font-size: 18px;
     font-family: 'Signika', sans-serif;
     margin-bottom: 3px;
@@ -410,7 +459,16 @@ footer{
 body{
     background-color: #e4e3e3;
 }
-main{
+/*footer*/
+footer{
+    border: solid 1px black;
+    background-color: #c7c7c7;
+}
+.pagfooter{
+    margin-right: 15px;
+    font-style: oblique;
+    font-size: 20px;
+    color:red;
     font-family: 'Rubik', sans-serif
 }
 .logo{
@@ -450,6 +508,110 @@ main{
         grid-template-rows: 35vh 140vh 37vh;
         grid-template-columns: 99.99%;
     
+}
+/*footer*/
+@media screen and (max-width: 768px) and (min-width: 458px) {
+    /*general*/
+    h1{
+        font-size: 55px;
+    }
+    p{
+        font-size: 13px;
+    }
+    /*general*/
+    /*index*/
+    .gridindex{
+        display: grid;
+        grid-template-rows: 35vh 140vh 46vh;
+        grid-template-columns: 99.99%;
+    
+    }
+    .p-index{
+        font-size: 13px !important;
+    }
+    .gridmain{
+        display: grid;
+        width: 95vw;
+        grid-template-areas: 
+        "titulo"
+        "streamers"
+        "clips"
+        "nosotros";
+        grid-template-rows: 16vh 43vh 66vh 14vh !important;
+        grid-template-columns: 100%;
+    }
+    .streamers_index{
+        flex-wrap: wrap;
+        width: 99.99;
+    }
+    .img{
+        margin-right: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .imgstrimers{
+        width: 19vh;
+        height: 19vh;
+    }
+    .imgstrimers:hover{
+        width: 31vh;
+        height: 23vh;
+    }
+    .clipindex{
+        height: 42vh;
+    }
+    /*index*/
+    /*streamers*/
+    .p_streamers{
+        font-size: 2vh;
+    }
+    .loguitos_strim{
+        width: 14vw;
+        height: 13vh;
+        margin-top: 3vh;
+    }
+    .texto{
+        font-size: 2vh;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: left;
+    }
+    /*streamers*/
+    /*footer*/
+    .foot{
+        position: relative;
+        right: 10px;
+        margin-right: 65%;
+    }
+    footer{
+        margin-top: 20px;
+    }
+    /*footer*/
+}
+@media screen and (max-width: 457px) {
+    /*general*/
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        margin-top: 8vh !important;
+        font-size: 19px !important;
+    }
+    h3{
+        font-size: 15px !important;
+    }
+    p{
+        font-size: 11px !important;
+    }
+    /*general*/
+    /*index*/
+    .gridindex{
+        display: grid;
+        grid-template-rows: 24vh 142vh 44vh;
+    }
+    .gridmain{
+        grid-template-rows: 16vh 39vh 71vh 11vh !important;
     }
     .p-index{
         font-size: 13px !important;
@@ -528,7 +690,7 @@ main{
     }
     .imgstrimers{
         width: 19vh;
-        height: 19vh;
+        height: 17vh;
     }
     .imgstrimers:hover{
         transform: scale(1.2,1.2);
@@ -539,4 +701,20 @@ main{
     p{
         font-size: 13px !important;
     }
+    .imgstrimers:hover{
+        width: 24vh;
+        height: 21vh;
+    }
+    /*index*/
+    /*streamers*/
+    .loguitos_strim:hover{
+        width: 13vh;
+    }
+    /*streamers*/
+    /*footer*/
+    .pagfooter{
+        font-size: 11px;
+    }
+    /*footer*/
+}
 }
