@@ -1,0 +1,10 @@
+.div_tit{
+    @include bg_banner;
+    .logoatico{
+        width: 16vh;
+        height: 16vh;
+    }
+}
+.bg_nav{
+    background-color: rgb(77, 72, 72);
+}
