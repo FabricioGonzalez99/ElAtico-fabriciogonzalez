@@ -16,7 +16,7 @@
       <div class="container-fluid div_tit">
         <div class="row">
           <a class="col-4" href="#"><img class="img-thumbnail logoatico" src="./imgs/elaticologo.jpg" alt="Logo principal"></a>
-          <h1 class="col-7 justify-content-start">
+          <h1 class="col-7 justify-content-start tit">
             El Atico
           </h1>
         </div>
@@ -53,7 +53,8 @@
       <h2 class="bienveindex">Bienvenidos!</h2>
       <section class="streamers_index container-fluid">
         <div class="row">
-          <h3 class="titindex col-10">Streamers:</h3>
+          <iconify-icon class="col-1" icon="arcticons:streamlabs" width="120" height="100"></iconify-icon>
+          <p class="col-9 align-self-end">Aqui tienes algunos de nuestros streamers:</p>
           <div class="d-flex justify-content-around img col-10">
             <img class="imgstrimers" src="./imgs/leito_logo.png" alt="Logo Vondross (streamer)">
             <img class="imgstrimers" src="./imgs/abbey_logo.png" alt="Logo Abbey (streamer)"> 
@@ -65,12 +66,9 @@
       </section>
       <section class="container-fluid clips">
         <div class="row">
-          <h3 class="titindex col-10">Clips:</h3>
-          <iframe class="clipindex col-5 mt-2 m-auto" width="460" height="325" src="https://www.youtube.com/embed/VlLk9Ujr5nY"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <iconify-icon class="col-1" icon="bxs:videos" width="120" height="100"></iconify-icon>
+          <p class="col-8 align-self-end">Aqui tienes uno de nuestros videos cortos graciosos:</p>
+          <iframe class="clipindex col-5 mt-2 m-auto" src="./videos/clip1_von.mp4" title="Clip1leo" frameborder="1"></iframe>
           <div>
             <p class="parrafoindex d-flex col-10">Si quieres ver mas clips:
               <a href="./pages/clips.html"><button type="button" class="bg_bot btn btn-primary">Clips</button></a>
@@ -89,14 +87,15 @@
       <div class="container-fluid row">
         <p class="col-5 mb-3 p-footer">Muchas gracias por pasar a conocernos!</p> 
         <p class="col-5 mb-3 p-footer">Ante cualquier pregunta o consulta que tengas dirigete a:
-          <a class="pagfooter" href="./pages/contacto.html">Contacto</a>
+          <a class="pagfooter" href="./pages/contacto.html"><button type="button" class="btn btn-secondary">Contacto</button></a>
         </p>
         <p class="col-3 mb-5 p-footer">Aqui tienes nuestras redes sociales:</p>
-        <a href="#" class="col-1"><img class="logo" src="./imgs/Instagram_logo_2016.png" alt="Logo_instagram" widht="50px" height="50px"></a>
+        <a href="#" class="col-2"><img class="logo" src="./imgs/Instagram_logo_2016.png" alt="Logo_instagram" widht="50px" height="50px"></a>
         <a href="#" class="col-1"><img class="logo" src="./imgs/discordlogo.png" alt="logo_discord" widht="50px" height="50px"></a>
         <p class="col-11 p-footer">O incluso puedes comunicarte a traves de nuestro Email: Elatico@gmail.com</p>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
   </body>
 </html>

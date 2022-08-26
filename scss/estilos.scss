@@ -2,7 +2,7 @@
 @import "mixins.scss";
 @import "mapas.scss";
 @import "header.scss";
-
+@import "mediaquerys.scss";
 *{
     margin: 0px;
     padding: 0px;
@@ -10,7 +10,7 @@
 /*index*/
 .gridindex{
     display: grid;
-    grid-template-rows: 27vh 175vh 47vh;
+    grid-template-rows: 27vh 160vh 31vh;
     background-image: map-get($colorfondo, gradgris);
     .gridmain{
     display: grid;
@@ -19,7 +19,7 @@
     "streamers"
     "clips"
     "nosotros";
-    grid-template-rows: 14vh 52vh 86vh 16vh !important;
+    grid-template-rows: 14vh 53vh 73vh 16vh !important;
         .bienveindex{
         grid-area: titulo;
         @include titulos;
@@ -30,6 +30,10 @@
             flex-direction: column;
             border: solid 2px rgb(24, 21, 21);
             margin-bottom: 3%;
+            .logostreamers{
+                width: 19vh !important;
+                height: 10vh !important;
+            }
             .titindex{
                 margin-left: 5px;
                 margin-top: 20px;
@@ -56,11 +60,11 @@
             margin-top: 1%;
             padding-bottom: 1%;
             margin-bottom: 2%;
-            .clipindex{
-                transition: all 3s;
-            }
             .parrafoindex{
                 margin-top: 2%;
+            }
+            .clipindex{
+                height: 40vh !important;
             }
         }
         .nos{
@@ -79,7 +83,7 @@
 /*streamers*/
 .gridmainstreamers{
     display: grid;
-    grid-template-rows: 15vh 27vh 27vh 27vh;
+    grid-template-rows: 15vh 27vh 27vh 27vh 27vh;
     background-image: map-get($colorfondo, gradrojo);
     .tit_streamers{
         margin-top: 20px;
@@ -91,21 +95,19 @@
         border: solid 2px rgb(139, 59, 59);
         background-color: map-get($colorfondo, gris);
         .p_streamers{
-            padding-left: 10px;
-            font-size: 30px;
+            font-size: 25px;
             .loguitos_strim{
+                margin-top: 1%;
                 width: 11vh;
                 height: 11vh;
                 transition: width 2s , height 2s;
                 &:hover{
-                    width: 14vh;
                     height: 15vh;
                 }
             }
         }
         .texto{
             font-size: 19px;
-            width: 70vw;
             margin-top: 5px;
             text-align: center;
         }
@@ -128,7 +130,7 @@ h1 {
     text-transform:uppercase;
     text-align: center;
     @include txt_flex_center;
-    font-size: 60px;
+    font-size: 60px !important;
     font-style: oblique;
     font-family: 'Rubik', sans-serif;
     color:red
@@ -141,18 +143,14 @@ h1 {
     @include titulos;
 }
 .nombclips{
-    font-size: 30px;
+    font-size: 27px;
 }
 .sec_clips{
     border: solid 1px rebeccapurple;
     margin-bottom: 30px;
 }
 .clipclips{
-    width: 25%;
-    position: relative;
-    left:20%;
-    margin-left: 5%;
-    margin-bottom: 20px;
+    height: 47vh !important;
 }
 /*clips*/
 
@@ -290,97 +288,13 @@ footer{
     width: 99,99%;
     border: solid 1px black;
     font-family: 'Signika', sans-serif;
-    background-color: #43434e;
+    background-color: #4d4d52;
     .p-footer{
         @extend .foot;
     }
     .logo{
-        width: 6vh;
-        height: 6vh;
+        width: 8vh;
+        height: 8vh;
     }   
 }
 /*footer*/
-@media screen and (max-width: 457px) {
-    .gridindex{
-        display: grid;
-        grid-template-rows: 24vh 135vh 46vh;
-        .gridmain{
-            display: grid;
-            width: 95vw;
-            grid-template-areas: 
-            "titulo"
-            "streamers"
-            "clips"
-            "nosotros";
-            grid-template-rows: 16vh 40vh 61vh 12vh !important;
-            .imgstrimers{
-                width: 15vh !important;
-                height: 15vh !important;
-                &:hover{
-                    width: 19vh !important;
-                    height: 19vh !important;
-                }
-            }
-        }
-    }
-    .logo{
-        width: 5vh;
-        height: 5vh;
-    }
-    .pagfooter{
-        font-size: 11px;
-    }
-    .p-footer{
-        font-size: $tam-fuente13 !important;
-    }
-    /*index*/
-    
-    .clipindex{
-        height: 280px;
-    }
-    p{
-        font-size: $tam-fuente13 !important;
-    }
-}
-@media screen and (max-width:768px) and (min-width:458px){
-    /*index*/
-    .gridindex{
-        grid-template-rows: 35vh 156vh 46vh;
-        .gridmain{
-            display: grid;
-            grid-template-areas: 
-            "titulo"
-            "streamers"
-            "clips"
-            "nosotros";
-            grid-template-rows: 16vh 45vh 73vh 16vh !important;
-            .imgstrimers{
-                width: 16vh !important;
-                height: 16vh !important;
-                &:hover{
-                    width: 17vh !important;
-                    height: 17vh !important;
-                }
-            }
-        }
-    }
-    .p-footer{
-        font-size: $tam-fuente13 !important;
-    }
-    .clipindex{
-        height: 280px;
-    }
-    /*index*/
-    /*streamers*/
-    /*streamers*/
-    p{
-        font-size: 17px !important;
-    }
-    .img{
-        margin-right: 10vh;
-        margin-left: 5vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}

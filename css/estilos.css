@@ -10,6 +10,83 @@
 .bg_nav {
   background-color: #4d4848; }
 
+@media screen and (max-width: 457px) {
+  .gridindex {
+    display: grid;
+    grid-template-rows: 24vh 135vh 47vh; }
+    .gridindex .gridmain {
+      display: grid;
+      width: 95vw;
+      grid-template-areas: "titulo" "streamers" "clips" "nosotros";
+      grid-template-rows: 16vh 40vh 61vh 12vh !important; }
+      .gridindex .gridmain .imgstrimers {
+        margin-left: 4% !important;
+        width: 12vh !important;
+        height: 12vh !important; }
+        .gridindex .gridmain .imgstrimers:hover {
+          width: 15vh !important;
+          height: 15vh !important; }
+  .logo {
+    width: 5vh !important;
+    height: 5vh !important; }
+  .pagfooter {
+    font-size: 11px; }
+  .p-footer {
+    font-size: 13px !important; }
+  /*index*/
+  /*streamers*/
+  .texto {
+    font-size: 11px !important;
+    margin-left: 3% !important; }
+  /*streamers*/
+  .tit {
+    font-size: 48px !important; }
+  h2 {
+    font-size: 39px !important; }
+  .clipindex {
+    height: 280px; }
+  p {
+    font-size: 13px !important; } }
+
+@media screen and (max-width: 768px) and (min-width: 458px) {
+  /*index*/
+  .gridindex {
+    grid-template-rows: 27vh 145vh 38vh; }
+    .gridindex .gridmain {
+      display: grid;
+      grid-template-areas: "titulo" "streamers" "clips" "nosotros";
+      grid-template-rows: 16vh 45vh 60vh 16vh !important; }
+      .gridindex .gridmain .imgstrimers {
+        width: 16vh !important;
+        height: 16vh !important; }
+        .gridindex .gridmain .imgstrimers:hover {
+          width: 17vh !important;
+          height: 17vh !important; }
+  .p-footer {
+    font-size: 13px !important; }
+  .clipindex {
+    height: 280px; }
+  /*index*/
+  /*streamers*/
+  .texto {
+    font-size: 15px !important; }
+  /*streamers*/
+  .logo {
+    width: 6vh !important;
+    height: 6vh !important; }
+  h1 {
+    font-size: 54px !important; }
+  h2 {
+    font-size: 45px !important; }
+  p {
+    font-size: 17px !important; }
+  .img {
+    margin-right: 10vh;
+    margin-left: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
+
 * {
   margin: 0px;
   padding: 0px; }
@@ -17,12 +94,12 @@
 /*index*/
 .gridindex {
   display: grid;
-  grid-template-rows: 27vh 175vh 47vh;
+  grid-template-rows: 27vh 160vh 31vh;
   background-image: radial-gradient(circle, #4c4f53, #474c55, #444a57, #414659, #40435a); }
   .gridindex .gridmain {
     display: grid;
     grid-template-areas: "titulo" "streamers" "clips" "nosotros";
-    grid-template-rows: 14vh 52vh 86vh 16vh !important; }
+    grid-template-rows: 14vh 53vh 73vh 16vh !important; }
     .gridindex .gridmain .bienveindex {
       grid-area: titulo;
       margin-top: 20px;
@@ -36,6 +113,9 @@
       flex-direction: column;
       border: solid 2px #181515;
       margin-bottom: 3%; }
+      .gridindex .gridmain .streamers_index .logostreamers {
+        width: 19vh !important;
+        height: 10vh !important; }
       .gridindex .gridmain .streamers_index .titindex {
         margin-left: 5px;
         margin-top: 20px;
@@ -57,10 +137,10 @@
       margin-top: 1%;
       padding-bottom: 1%;
       margin-bottom: 2%; }
-      .gridindex .gridmain .clips .clipindex {
-        transition: all 3s; }
       .gridindex .gridmain .clips .parrafoindex {
         margin-top: 2%; }
+      .gridindex .gridmain .clips .clipindex {
+        height: 40vh !important; }
     .gridindex .gridmain .nos {
       grid-area: nosotros;
       border: solid 2px #181515; }
@@ -73,7 +153,7 @@
 /*streamers*/
 .gridmainstreamers {
   display: grid;
-  grid-template-rows: 15vh 27vh 27vh 27vh;
+  grid-template-rows: 15vh 27vh 27vh 27vh 27vh;
   background-image: linear-gradient(to right top, #cd7eb2, #c96691, #c04f6e, #b13a4a, #9d2a25); }
   .gridmainstreamers .tit_streamers {
     margin-top: 20px;
@@ -84,18 +164,16 @@
     border: solid 2px #8b3b3b;
     background-color: #556068; }
     .gridmainstreamers .secs_streamers .p_streamers {
-      padding-left: 10px;
-      font-size: 30px; }
+      font-size: 25px; }
       .gridmainstreamers .secs_streamers .p_streamers .loguitos_strim {
+        margin-top: 1%;
         width: 11vh;
         height: 11vh;
         transition: width 2s , height 2s; }
         .gridmainstreamers .secs_streamers .p_streamers .loguitos_strim:hover {
-          width: 14vh;
           height: 15vh; }
     .gridmainstreamers .secs_streamers .texto {
       font-size: 19px;
-      width: 70vw;
       margin-top: 5px;
       text-align: center; }
 
@@ -117,7 +195,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 60px;
+  font-size: 60px !important;
   font-style: oblique;
   font-family: 'Rubik', sans-serif;
   color: red; }
@@ -134,18 +212,14 @@ h1 {
   font-family: 'Rubik', sans-serif; }
 
 .nombclips {
-  font-size: 30px; }
+  font-size: 27px; }
 
 .sec_clips {
   border: solid 1px rebeccapurple;
   margin-bottom: 30px; }
 
 .clipclips {
-  width: 25%;
-  position: relative;
-  left: 20%;
-  margin-left: 5%;
-  margin-bottom: 20px; }
+  height: 47vh !important; }
 
 /*clips*/
 /*nosotros*/
@@ -293,66 +367,9 @@ footer {
   width: 99,99%;
   border: solid 1px black;
   font-family: 'Signika', sans-serif;
-  background-color: #43434e; }
+  background-color: #4d4d52; }
   footer .logo {
-    width: 6vh;
-    height: 6vh; }
+    width: 8vh;
+    height: 8vh; }
 
 /*footer*/
-@media screen and (max-width: 457px) {
-  .gridindex {
-    display: grid;
-    grid-template-rows: 24vh 135vh 46vh; }
-    .gridindex .gridmain {
-      display: grid;
-      width: 95vw;
-      grid-template-areas: "titulo" "streamers" "clips" "nosotros";
-      grid-template-rows: 16vh 40vh 61vh 12vh !important; }
-      .gridindex .gridmain .imgstrimers {
-        width: 15vh !important;
-        height: 15vh !important; }
-        .gridindex .gridmain .imgstrimers:hover {
-          width: 19vh !important;
-          height: 19vh !important; }
-  .logo {
-    width: 5vh;
-    height: 5vh; }
-  .pagfooter {
-    font-size: 11px; }
-  .p-footer {
-    font-size: 13px !important; }
-  /*index*/
-  .clipindex {
-    height: 280px; }
-  p {
-    font-size: 13px !important; } }
-
-@media screen and (max-width: 768px) and (min-width: 458px) {
-  /*index*/
-  .gridindex {
-    grid-template-rows: 35vh 156vh 46vh; }
-    .gridindex .gridmain {
-      display: grid;
-      grid-template-areas: "titulo" "streamers" "clips" "nosotros";
-      grid-template-rows: 16vh 45vh 73vh 16vh !important; }
-      .gridindex .gridmain .imgstrimers {
-        width: 16vh !important;
-        height: 16vh !important; }
-        .gridindex .gridmain .imgstrimers:hover {
-          width: 17vh !important;
-          height: 17vh !important; }
-  .p-footer {
-    font-size: 13px !important; }
-  .clipindex {
-    height: 280px; }
-  /*index*/
-  /*streamers*/
-  /*streamers*/
-  p {
-    font-size: 17px !important; }
-  .img {
-    margin-right: 10vh;
-    margin-left: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; } }
