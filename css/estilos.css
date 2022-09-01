@@ -1,28 +1,47 @@
 .div_tit {
-  background-image: url(https://picsum.photos/1700/124);
+  background-image: url(../imgs/fondoheader1920x400.jpg);
   background-size: auto;
   background-repeat: no-repeat;
   padding-left: 0% !important; }
   .div_tit .logoatico {
-    width: 16vh;
-    height: 16vh; }
+    width: 17vh;
+    height: 17vh; }
 
 .bg_nav {
-  background-color: #4d4848; }
+  background-color: #3a3a57; }
+  .bg_nav ul {
+    width: 100%; }
+
+h1 {
+  height: 114px;
+  width: 100%;
+  margin-bottom: 0% !important;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px !important;
+  font-style: oblique;
+  font-family: 'Rubik', sans-serif;
+  color: #a0aeba; }
 
 * {
   margin: 0px;
   padding: 0px; }
 
 /*index*/
+.nav-link {
+  color: white !important; }
+
 .gridindex {
   display: grid;
-  grid-template-rows: 27vh 160vh 33vh;
-  background-image: radial-gradient(circle, #4c4f53, #474c55, #444a57, #414659, #40435a); }
+  grid-template-rows: 27vh 143vh 28vh;
+  background-image: radial-gradient(circle, #4c4f53, #474c55, #4c4c60, #3a3a52, #3a3a57); }
   .gridindex .gridmain {
     display: grid;
     grid-template-areas: "titulo" "streamers" "clips" "nosotros";
-    grid-template-rows: 14vh 53vh 73vh 16vh !important; }
+    grid-template-rows: 14vh 53vh 82vh 16vh !important; }
     .gridindex .gridmain .bienveindex {
       grid-area: titulo;
       margin-top: 20px;
@@ -67,7 +86,7 @@
       .gridindex .gridmain .clips .parrafoindex {
         margin-top: 2%; }
       .gridindex .gridmain .clips .clipindex {
-        height: 40vh !important; }
+        height: 50vh !important; }
     .gridindex .gridmain .nos {
       grid-area: nosotros;
       border: solid 2px #181515; }
@@ -81,15 +100,15 @@
 .gridmainstreamers {
   display: grid;
   grid-template-rows: 15vh 27vh 27vh 27vh 27vh;
-  background-image: linear-gradient(to right top, #cd7eb2, #c96691, #c04f6e, #b13a4a, #9d2a25); }
+  background-image: radial-gradient(circle, #2c384c, #2c344f, #2f3050, #352a50, #3c234d); }
   .gridmainstreamers .tit_streamers {
     margin-top: 20px;
     text-align: center;
     font-size: 45px; }
   .gridmainstreamers .secs_streamers {
     display: flex;
-    border: solid 2px #8b3b3b;
-    background-color: #556068; }
+    border: solid 2px #010000;
+    background-color: #4c4f53; }
     .gridmainstreamers .secs_streamers .p_streamers {
       font-size: 25px; }
       .gridmainstreamers .secs_streamers .p_streamers .loguitos_strim {
@@ -105,53 +124,33 @@
       text-align: center; }
 
 /*streamers*/
-ul {
-  width: 100%; }
-
-p {
+p, .celestis .formu label {
   font-size: 18px;
   margin-left: 5px;
-  font-family: 'Rubik', sans-serif; }
-
-h1 {
-  height: 114px;
-  width: 100%;
-  margin-bottom: 0% !important;
-  text-transform: uppercase;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px !important;
-  font-style: oblique;
   font-family: 'Rubik', sans-serif;
-  color: red; }
+  color: white; }
 
 /*clips*/
 .bgclips {
-  background-image: radial-gradient(circle, #44456d, #6d4e7a, #95577f, #b9637b, #d47571); }
-
-.tit_clips {
-  margin-top: 20px;
-  font-size: 50px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-family: 'Rubik', sans-serif; }
-
-.nombclips {
-  font-size: 27px; }
-
-.sec_clips {
-  border: solid 1px rebeccapurple;
-  margin-bottom: 30px; }
-
-.clipclips {
-  height: 47vh !important; }
+  background-image: radial-gradient(circle, #2c384c, #2c354e, #2f3050, #352b4f, #3c254d); }
+  .bgclips .tit_clips {
+    margin-top: 20px;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif; }
+  .bgclips .sec_clips {
+    border: solid 1px rebeccapurple;
+    margin-bottom: 30px; }
+    .bgclips .sec_clips .nombclips {
+      font-size: 27px; }
+    .bgclips .sec_clips .clipclips {
+      height: 47vh !important; }
 
 /*clips*/
 /*nosotros*/
 .bgnos {
-  background-image: radial-gradient(circle, #5fa38b, #258893, #26698d, #464772, #4f2645); }
+  background-image: radial-gradient(circle, #2e3c52, #303953, #343553, #3a3152, #402c4f); }
 
 .tit_nos {
   margin-top: 20px;
@@ -174,92 +173,30 @@ h1 {
   word-spacing: 3px; }
 
 .imgnos {
-  height: 100%;
-  position: relative;
+  height: 44vw;
   width: 100%;
   margin-bottom: 3%; }
 
 /*nosotros*/
 /*contacto*/
-.imagen1 {
-  position: relative;
-  bottom: 610px; }
-
-.imagencont {
-  position: absolute;
-  bottom: 650px; }
-
 .celestis {
-  width: 100%;
-  background-image: url(https://picsum.photos/1500/720);
+  background-image: radial-gradient(circle, #2c384c, #2c344f, #2f3050, #352a50, #3c234d);
   background-repeat: no-repeat; }
-
-.contacto {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 40px;
-  font-family: 'Rubik', sans-serif;
-  margin-bottom: 30px;
-  position: relative;
-  right: 7px;
-  bottom: 10px; }
-
-.pregs {
-  margin-left: 10px;
-  font-size: 18px;
-  font-family: 'Signika', sans-serif;
-  margin-bottom: 3px; }
-
-.celular {
-  margin-left: 10px;
-  font-size: 18px;
-  font-family: 'Signika', sans-serif;
-  margin-bottom: 3px;
-  position: relative;
-  left: 400px;
-  bottom: 114px; }
-
-.mail {
-  margin-left: 10px;
-  font-size: 18px;
-  font-family: 'Signika', sans-serif;
-  margin-bottom: 3px;
-  position: relative;
-  left: 800px;
-  bottom: 47px; }
-
-.msj {
-  margin-left: 10px;
-  font-size: 18px;
-  font-family: 'Signika', sans-serif;
-  margin-bottom: 3px;
-  position: relative;
-  bottom: 110px; }
-
-.cartelmsj {
-  width: 1100px;
-  height: 200px;
-  margin-left: 10px;
-  align-content: flex-start;
-  position: relative;
-  bottom: 110px; }
-
-.formu {
-  position: relative;
-  top: 30px;
-  background-color: #d6d6d4;
-  height: 460px;
-  border: solid 2px gray;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 0px;
-  padding-bottom: 0px; }
-
-.btn {
-  margin-left: 10px;
-  font-size: 18px;
-  font-family: 'Signika', sans-serif;
-  margin-bottom: 3px; }
+  .celestis .formu {
+    background-color: #9e9e98;
+    height: 100%;
+    border: solid 2px gray; }
+    .celestis .formu .contacto {
+      text-align: center;
+      font-size: 50px;
+      font-family: 'Rubik', sans-serif; }
+    .celestis .formu .btn {
+      margin-top: 1%;
+      margin-left: 10px;
+      font-size: 18px;
+      font-family: 'Signika', sans-serif;
+      margin-bottom: 3px;
+      border: solid black; }
 
 /*contacto*/
 .linea {
@@ -291,10 +228,11 @@ main {
 
 /*footer*/
 footer {
-  width: 99,99%;
+  position: relative;
+  top: 100%;
   border: solid 1px black;
   font-family: 'Signika', sans-serif;
-  background-color: #4d4d52; }
+  background-color: #3a3a57; }
   footer .logo {
     width: 8vh;
     height: 8vh; }
@@ -336,7 +274,7 @@ footer {
     font-size: 48px !important; }
   h2 {
     font-size: 39px !important; }
-  p {
+  p, .celestis .formu label {
     font-size: 13px !important; } }
 
 @media screen and (max-width: 768px) and (min-width: 458px) {
@@ -367,11 +305,13 @@ footer {
     font-size: 54px !important; }
   h2 {
     font-size: 45px !important; }
-  p {
+  p, .celestis .formu label {
     font-size: 17px !important; }
   .imagen {
     margin-right: 10vh;
     margin-left: 5vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  /*Nosotros*/
+  /*Fin estilos nosotros*/ }

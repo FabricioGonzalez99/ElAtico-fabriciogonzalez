@@ -7,9 +7,12 @@
     padding: 0px;
 }
 /*index*/
+.nav-link{
+    color: white !important;
+}
 .gridindex{
     display: grid;
-    grid-template-rows: 27vh 160vh 33vh;
+    grid-template-rows: 27vh 143vh 28vh;
     background-image: map-get($colorfondo, gradgris);
     .gridmain{
     display: grid;
@@ -18,7 +21,7 @@
     "streamers"
     "clips"
     "nosotros";
-    grid-template-rows: 14vh 53vh 73vh 16vh !important;
+    grid-template-rows: 14vh 53vh 82vh 16vh !important;
         .bienveindex{
         grid-area: titulo;
         @include titulos;
@@ -69,7 +72,7 @@
                 margin-top: 2%;
             }
             .clipindex{
-                height: 40vh !important;
+                height: 50vh !important;
             }
         }
         .nos{
@@ -89,7 +92,7 @@
 .gridmainstreamers{
     display: grid;
     grid-template-rows: 15vh 27vh 27vh 27vh 27vh;
-    background-image: map-get($colorfondo, gradrojo);
+    background-image: map-get($colorfondo, gradstreamers);
     .tit_streamers{
         margin-top: 20px;
         text-align: center;
@@ -97,7 +100,7 @@
         }
     .secs_streamers{
         display: flex;
-        border: solid 2px rgb(139, 59, 59);
+        border: solid 2px rgb(1, 0, 0);
         background-color: map-get($colorfondo, gris);
         .p_streamers{
             font-size: 25px;
@@ -120,48 +123,34 @@
 }
 
 /*streamers*/
-ul{
-    width: 100%;
-}
 p{
     font-size: 18px;
     margin-left: 5px;
-    font-family: 'Rubik', sans-serif
-}
-h1 {
-    height: 114px;
-    width: 100%;
-    margin-bottom: 0% !important;
-    text-transform:uppercase;
-    text-align: center;
-    @include txt_flex_center;
-    font-size: 60px !important;
-    font-style: oblique;
     font-family: 'Rubik', sans-serif;
-    color:red
+    color: white;
 }
 /*clips*/
 .bgclips{
-    background-image: radial-gradient(circle, #44456d, #6d4e7a, #95577f, #b9637b, #d47571);
-}
-.tit_clips{
-    @include titulos;
-}
-.nombclips{
-    font-size: 27px;
-}
-.sec_clips{
-    border: solid 1px rebeccapurple;
-    margin-bottom: 30px;
-}
-.clipclips{
-    height: 47vh !important;
+    background-image: map-get($colorfondo, gradclips);
+    .tit_clips{
+        @include titulos;
+    }
+    .sec_clips{
+        border: solid 1px rebeccapurple;
+        margin-bottom: 30px;
+        .nombclips{
+            font-size: 27px;
+        }
+        .clipclips{
+            height: 47vh !important;
+        }
+    }
 }
 /*clips*/
 
 /*nosotros*/
 .bgnos{
-    background-image: radial-gradient(circle, #5fa38b, #258893, #26698d, #464772, #4f2645);
+    background-image: map-get($colorfondo, gradnosotros);
 }
 .tit_nos{
     @include titulos
@@ -178,87 +167,34 @@ h1 {
     @include parrafos_nos;
 }
 .imgnos{
-    height: 100%;
-    position: relative;
+    height: 44vw;
     width: 100%;
     margin-bottom: 3%;
 }
 /*nosotros*/
 
 /*contacto*/
-.imagen1{
-    position: relative;
-    bottom: 610px;
-}
-.imagencont{
-    position: absolute;
-    bottom: 650px;
-}
 .celestis{
-    width: 100%;
-    background-image: url(https://picsum.photos/1500/720);
+    background-image: map-get($colorfondo, gradstreamers);
     background-repeat:no-repeat;
-}
-.contacto{
-    margin-top:40px;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Rubik', sans-serif;
-    margin-bottom: 30px;
-
-    position: relative;
-    right: 7px;
-    bottom: 10px;
-}
-.pregs{
-    margin-left: 10px;
-    font-size: 18px;
-    font-family: 'Signika', sans-serif;
-    margin-bottom: 3px;
-}
-.celular{
-    @include carac_contac;
-
-    position: relative;
-    left: 400px;
-    bottom: 114px;
-}
-.mail{
-    @include carac_contac;
-
-    position: relative;
-    left: 800px;
-    bottom: 47px;
-}
-.msj{
-    @include carac_contac;
-
-    position: relative;
-    bottom: 110px;
-}
-.cartelmsj{
-    width: 1100px;
-    height: 200px;
-    margin-left: 10px;
-    align-content:flex-start;
-
-    position: relative;
-    bottom: 110px;
-}
-.formu{
-    position: relative;
-    top: 30px;
-
-    background-color: #d6d6d4;
-    height: 460px;
-    border: solid 2px gray;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0px;
-    padding-bottom: 0px;
-}
-.btn{
-    @include carac_contac;
+    .formu{
+        background-color: #9e9e98;
+        height: 100%;
+        border: solid 2px gray;
+        .contacto{
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Rubik', sans-serif;
+        }
+        .btn{
+            margin-top: 1%;
+            @include carac_contac;
+            border: solid black;
+        }
+        label{
+            @extend p;
+        }
+    }
 }
 /*contacto*/
 .linea{
@@ -290,10 +226,11 @@ main{
 }
 /*footer*/
 footer{
-    width: 99,99%;
+    position: relative;
+    top: 100%;
     border: solid 1px black;
     font-family: 'Signika', sans-serif;
-    background-color: #4d4d52;
+    background-color: #3a3a57;
     .p-footer{
         @extend .foot;
     }
@@ -409,4 +346,7 @@ footer{
         flex-direction: row;
         justify-content: space-between;
     }
+    /*Nosotros*/
+    
+    /*Fin estilos nosotros*/
 }

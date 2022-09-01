@@ -11,17 +11,17 @@
         <link rel="stylesheet" href="../css/estilos.css">
         <title>El Atico-Pagina Sobre Nosotros</title>
     </head>
-    <body class="bg">
+    <body class="bgnos">
         <header>
             <div class="container-fluid div_tit">
-                <div class="row titulohead">
-                    <a class="col-5" href="../index.html"><img class="img-thumbnail logoatico" src="../imgs/elaticologo.jpg" alt="Logo principal" loading="lazy"></a>
-                    <h1 class="col-7 justify-content-start tit">
-                        El Atico
-                    </h1>
-                </div>
+              <div class="row">
+                <a class="col-4 align-self-center" href="../index.html"><img class="img-thumbnail logoatico" src="../imgs/elaticologo.jpg" alt="Logo principal" loading="lazy"></a>
+                <h1 class="col-7 justify-content-start tit">
+                  El Atico
+                </h1>
+              </div>
             </div>
-            <nav class="navbar navbar-expand-lg bg-info bg-gradient">
+            <nav class="navbar navbar-expand-lg bg_nav">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,38 +52,43 @@
         <main>
             <h2 class="tit_nos">Nosotros</h2>
             <section class="sec_nos">
-                <p class="par_nos1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus non nulla a ornare.
-                    Suspendisse potenti.
+                <p class="par_nos1 d-flex justify-content-center">En esta pagina contaremos un poco sobre lo que es el Atico
+                    y lo que significa.
                 </p>
             </section>
             <section class="sec_nos">
                 <p class="par_nos">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus non nulla a ornare.
-                    Suspendisse potenti. Pellentesque ut nisi at metus viverra pellentesque eget id ante. Phasellus eget
-                    urna sed magna auctor lacinia non id sapien. Nulla facilisi. Vestibulum vestibulum eget arcu vitae
-                    sagittis. Sed luctus magna ut lacus luctus maximus. Ut imperdiet elementum dapibus. Aliquam vitae
-                    imperdiet neque. Nullam nec aliquam orci, accumsan aliquam orci. Nulla sollicitudin tellus in nibh
-                    egestas laoreet. Nunc a massa iaculis dui rhoncus mollis. Vivamus quis ligula eget justo ornare
-                    vulputate a eu felis. Phasellus in mollis nisi, dapibus finibus nibh. Fusce id blandit ipsum. Morbi
-                    dignissim urna tristique turpis commodo, nec maximus ante egestas.
+                    El Atico es una comunidad de streamers entre amigos, la cual nació de nuestras ganas de hacer directos,
+                    y además de unirnos como si fueramos uno y también hacernos publicidad entre nosotros, ya que siempre 
+                    jugamos juntos y los directos siempre hacemos en presencia de 2 o mas integrantes.
+                </p>
+                <p class="par_nos">
+                    El nombre Atico proviene de la parte de la casa de uno de los integrantes, donde siempre nos juntabamos
+                    cuando nos veiamos, ya que vivimos en distintas provincias, por lo tanto cuando nos veiamos dormiamos ahi
+                    y pasabamos gran parte del tiempo charlando en ese lugar.
                 </p>
             </section>
             <section class="img">
-                <img class="imgnos" src="https://picsum.photos/1600/310" alt="Imagen comunidad">
+                <img srcset="../imgs/bannernosnuevotablet.jpg 300w,
+                             ../imgs/bannernosnuevo.jpg 800w"
+                            sizes="(max-width: 300px) 300px,
+                                   800px"
+                            src="../imgs/bannernosnuevo.jpg" class="imgnos" alt="Imagen comunidad" loading="lazy">
             </section>
         </main>
         <footer>
             <div class="container-fluid row">
                 <p class="col-5 mb-3 p-footer">Muchas gracias por pasar a conocernos!</p> 
                 <p class="col-5 mb-3 p-footer">Ante cualquier pregunta o consulta que tengas dirigete a:
-                    <a class="pagfooter" href="./pages/contacto.html"><button type="button" class="btn btn-secondary">Contacto</button></a>
+                    <a class="pagfooter" href="contacto.html"><button type="button" class="btn btn-secondary">Contacto</button></a>
                 </p>
+                <p class="col-5 p-footer">Nuestro Email: Elatico@gmail.com</p>
                 <p class="col-3 mb-5 p-footer">Aqui tienes nuestras redes sociales:</p>
                 <a href="#" class="col-2"><img class="logo" src="../imgs/Instagram_logo_2016.png" alt="Logo_instagram" loading="lazy"></a>
-                <a href="#" class="col-1"><img class="logo" src="../imgs/discordlogo.png" alt="logo_discord" loading="lazy"></a>
-                <p class="col-11 p-footer">O incluso puedes comunicarte a traves de nuestro Email: Elatico@gmail.com</p>
+                <a href="#" class="col-1"><img class="logo" src="../imgs/discordlogo.png" alt="logo_discord" loading="lazy"></a>  
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     </body>
 </html>
