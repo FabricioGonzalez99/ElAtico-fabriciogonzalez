@@ -1,0 +1,130 @@
+@media screen and (max-width: 457px) {
+    .gridindex{
+        display: grid;
+        grid-template-rows: 24vh 126vh 34vh;
+        .gridmain{
+            display: grid;
+            width: 95vw;
+            grid-template-areas: 
+            "titulo"
+            "streamers"
+            "clips"
+            "nosotros";
+            grid-template-rows: 16vh 48vh 77vh 12vh !important;
+            .streamers_index{
+                .imagen{
+                    .imgstrimers{
+                        margin-left: 7% !important;
+                        width: 11vh !important;
+                        height: 11vh !important;
+                        &:hover{
+                            width: 13vh !important;
+                            height: 13vh !important;
+                        }
+                    }
+                }
+            }
+            .clips{
+                .grid-clips{
+                    display: grid;
+                    grid-template-rows: 12vh auto 47vh auto;
+                    .clipindex{
+                        height: 44vh !important;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .p-footer{
+            font-size: $tam-fuente13 !important;
+            .pagfooter{
+                font-size: 11px;
+            }
+        }
+        .email{
+            margin-right: 7px !important;
+        }
+        .logo{
+            width: 4vh !important;
+            height: 4vh !important;
+        }
+    }
+    /*index*/
+    /*streamers*/
+    .texto{
+        font-size: 11px !important;
+        margin-left: 6% !important;
+    }
+    /*streamers*/
+    /*clips*/
+    .bgclips{
+        .sec_clips{
+            .clipclips{
+                height: 15vh !important;
+            }
+        }
+    }
+    /*clips*/
+    .tit{
+        font-size: 48px !important;
+    }
+    h2{
+        font-size: 39px !important;
+    }
+    p{
+        font-size: $tam-fuente13 !important;
+    }
+}
+@media screen and (max-width:768px) and (min-width:458px){
+    /*index*/
+    .gridindex{
+        grid-template-rows: 27vh 126vh 30vh;
+        .gridmain{
+            display: grid;
+            grid-template-areas: 
+            "titulo"
+            "streamers"
+            "clips"
+            "nosotros";
+            grid-template-rows: 16vh 45vh 76vh 16vh !important;
+            .imgstrimers{
+                width: 16vh !important;
+                height: 16vh !important;
+                &:hover{
+                    width: 17vh !important;
+                    height: 17vh !important;
+                }
+            }
+        }
+    }
+    .p-footer{
+        font-size: $tam-fuente13 !important;
+    }
+    /*index*/
+    /*streamers*/
+    .texto{
+        font-size: 15px !important;
+    }
+    /*streamers*/
+    .logo{
+        width: 6vh !important;
+        height: 6vh !important;
+    }   
+    h1{
+        font-size: 54px !important
+    }
+    h2{
+        font-size: 45px !important;
+    }
+    p{
+        font-size: 17px !important;
+    }
+    .imagen{
+        margin-right: 10vh;
+        margin-left: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

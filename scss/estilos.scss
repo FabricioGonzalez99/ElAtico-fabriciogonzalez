@@ -2,6 +2,7 @@
 @import "mixins.scss";
 @import "mapas.scss";
 @import "header.scss";
+@import "pagerror.scss";
 *{
     margin: 0px;
     padding: 0px;
@@ -12,7 +13,7 @@
 }
 .gridindex{
     display: grid;
-    grid-template-rows: 27vh 143vh 28vh;
+    grid-template-rows: 27vh 143vh 27vh;
     background-image: map-get($colorfondo, gradgris);
     .gridmain{
     display: grid;
@@ -123,7 +124,7 @@
 }
 
 /*streamers*/
-p{
+p:not(.perr , .perr2 , .textoerr){
     font-size: 18px;
     margin-left: 5px;
     font-family: 'Rubik', sans-serif;
@@ -197,27 +198,6 @@ p{
     }
 }
 /*contacto*/
-.linea{
-    line-height: 20px;
-    letter-spacing: 4px;
-    word-spacing: 140px;
-    width: 99,99%;
-}
-.foot{
-    font-size: 17px;
-}
-.pagfooter{
-    margin-left: 25px;
-    margin-right: 15px;
-    font-style: oblique;
-    font-size: 20px;
-    color:red;
-    font-family: 'Rubik', sans-serif
-}
-.flex{
-    display: flex;
-    flex-direction: column;
-}
 body{
     background-color: #e4e3e3;
 }
@@ -232,18 +212,27 @@ footer{
     font-family: 'Signika', sans-serif;
     background-color: #3a3a57;
     .p-footer{
-        @extend .foot;
+        font-size: 17px;
+        .pagfooter{
+            margin-left: 25px;
+            margin-right: 15px;
+            font-style: oblique;
+            font-size: 20px;
+            color:red;
+            font-family: 'Rubik', sans-serif
+        }
     }
     .logo{
         width: 8vh;
         height: 8vh;
     }   
 }
+
 /*footer*/
 @media screen and (max-width: 457px) {
     .gridindex{
         display: grid;
-        grid-template-rows: 24vh 139vh 54vh;
+        grid-template-rows: 24vh 126vh 34vh;
         .gridmain{
             display: grid;
             width: 95vw;
@@ -252,7 +241,7 @@ footer{
             "streamers"
             "clips"
             "nosotros";
-            grid-template-rows: 16vh 48vh 57vh 12vh !important;
+            grid-template-rows: 16vh 48vh 77vh 12vh !important;
             .imgstrimers{
                 margin-left: 4% !important;
                 width: 12vh !important;
@@ -264,27 +253,29 @@ footer{
             }
             .grid-clips{
                 display: grid;
-                grid-template-rows: 12vh auto 26vh auto;
+                grid-template-rows: 12vh auto 47vh auto;
+                .clipindex{
+                    height: 44vh !important;
+                }
             }
         }
-    }
-    .logo{
-        width: 5vh !important;
-        height: 5vh !important;
-    }
-    .pagfooter{
-        font-size: 11px;
-    }
-    .p-footer{
-        font-size: $tam-fuente13 !important;
     }
     /*index*/
     /*streamers*/
     .texto{
         font-size: 11px !important;
-        margin-left: 3% !important;
+        margin-left: 6% !important;
     }
     /*streamers*/
+    /*clips*/
+    .bgclips{
+        .sec_clips{
+            .clipclips{
+                height: 15vh !important;
+            }
+        }
+    }
+    /*clips*/
     .tit{
         font-size: 48px !important;
     }
@@ -294,11 +285,26 @@ footer{
     p{
         font-size: $tam-fuente13 !important;
     }
+    /*footer*/
+    .logo{
+        width: 4vh !important;
+        height: 4vh !important;
+    }
+    .p-footer{
+        font-size: $tam-fuente13 !important;
+        .pagfooter{
+            font-size: 11px;
+        }
+    }
+    .email{
+        margin-right: 7px !important;
+    }
+    /*footer*/
 }
 @media screen and (max-width:768px) and (min-width:458px){
     /*index*/
     .gridindex{
-        grid-template-rows: 27vh 145vh 48vh;
+        grid-template-rows: 27vh 126vh 30vh;
         .gridmain{
             display: grid;
             grid-template-areas: 
@@ -306,7 +312,7 @@ footer{
             "streamers"
             "clips"
             "nosotros";
-            grid-template-rows: 16vh 45vh 65vh 16vh !important;
+            grid-template-rows: 16vh 45vh 76vh 16vh !important;
             .imgstrimers{
                 width: 16vh !important;
                 height: 16vh !important;
